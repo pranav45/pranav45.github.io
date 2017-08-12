@@ -3,40 +3,84 @@
   width: 100%;
 
 }
+
 .leftcontainer
 {
-  display: block;
-  float:left;
-  background-color:#D1DDD1;
-  position: fixed;
-  width:250px;
+    display: block;
+    float: left;
+    background-color: #D1DDD1;
+    position: absolute;
+    width: 332px;
 
 }
 
-.circle {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  font-size: 50px;
-  color: #fff;
-  line-height: 500px;
-  text-align: center;
-  background: #000
+p
+{
+    text-align: justify;
+}
+
+.circle
+{
+    width: 5px;
+    height: 2px;
+    border-radius: 50%;
+    color: #fff;
+    background: #000;
 }
 
 img.profilepic {
   width: 163px;
-height: 179px;
-margin-left: 4%;
-margin-top: 4%;
-border-radius: 81px;
+  height: 179px;
+  margin-left: 21%;
+  margin-top: 4%;
+  border-radius: 81px;
+}
+
+p.refdetail {
+    text-align: justify;
+    margin-right: 52%;
+}
+
+.Interests {
+    margin-right: 32%;
+}
+.profile {
+    margin-left: 4%;
+    margin-right: 9%;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+
+
+.Technical_skills {
+    margin-left: 4%;
+    margin-right: 6%;
+    font-family: 'Raleway', sans-serif;
+
+}
+.Education
+{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.Personal_info {
+    margin-left: 4%;
+}
+
+td
+{
+  padding: 5px;
 }
 
 .rightcontainer
 {
-  display: block;
-  width:750px;
-  float: left;
-  background-color: #FFFFFF;
-  margin-left: 21%;
+    display: block;
+    width: 750px;
+    float: left;
+    background-color: #FFFFFF;
+    margin-left: 28%;
+    position: absolute;
 }
