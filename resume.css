@@ -1,11 +1,9 @@
-.container
-{
+.container{
   width: 100%;
 
 }
 
-.leftcontainer
-{
+.leftcontainer{
     display: block;
     float: left;
     background-color: #D1DDD1;
@@ -15,13 +13,17 @@
 
 }
 
-p
-{
+p{
     text-align: justify;
 }
 
-.circle
-{
+.contentpanel {
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.circle {
     width: 5px;
     height: 2px;
     border-radius: 50%;
@@ -47,22 +49,20 @@ p.refdetail {
     margin-right: 2%;
 }
 
-.Education {
+.Education,.Other_details  {
     margin-left: 2%;
 }
-.Other_details {
-    margin-left: 2%;
-}
+
 .profile {
     margin-left: 4%;
     margin-right: 9%;
 }
-
+body {
+    background-color: #6b6767;
+}
 h1 {
     margin-bottom: 8px;
 }
-
-
 
 .Technical_skills {
     margin-left: 4%;
@@ -70,8 +70,7 @@ h1 {
     font-family: 'Raleway', sans-serif;
 
 }
-.Education
-{
+.Education{
     font-family: 'Maven Pro', sans-serif;
 }
 
@@ -83,13 +82,11 @@ h1 {
     margin-left: 2%;
 }
 
-td
-{
+td{
   padding: 5px;
 }
 
-.rightcontainer
-{
+.rightcontainer{
   display: block;
   width: 750px;
   height: 854px;
