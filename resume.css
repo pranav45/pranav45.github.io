@@ -12,6 +12,7 @@
   width: 332px;
   height: 895px;
   border: 2px ridge #DFDEDD;
+  margin: 0 auto;
 }
 
 
@@ -25,13 +26,13 @@ p{
     height: 100%;
 }
 .circle {
-  width: 2%;
-  height: 2%;
-  padding: 2px 4px 1px 5px;
-  margin: 0 auto;
-  border-radius: 60%;
-  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
   background: #000;
+  display: table-cell;
+  width: 1%;
+  height: 1%;
+  background-size: 54%;
 }
 
 img.profilepic {
@@ -39,17 +40,17 @@ img.profilepic {
     height: 179px;
     margin-left: 21%;
     margin-top: 4%;
-    border-radius: 81px;
+    border-radius: 50%;
 }
 
 p.refdetail {
     text-align: justify;
-    margin-right: 52%;
+
 }
 
 .Interests {
   margin-left: 2%;
-  margin-right: 23%;
+  margin-right: 8%;
 font-family: 'Titillium Web', sans-serif;
 font-size: 15px;
 }
@@ -65,9 +66,10 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .profile {
       margin-left: 4%;
-      margin-right: 9%;
+      margin-right: 4%;
       font-family: serif;
       font-size: 15px;
+      text-align: justify;
 }
 
 body {
@@ -75,19 +77,25 @@ body {
 }
 
 h1 {
-    margin-bottom: 8px;
+    margin: 0 auto;
+    padding: 0px 0px 2px 3px;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 ul {
     padding: 0px 0px 0px 20px;
 }
 
+label#pinfo {
+    padding: 0px 1px 2px 5px;
+    margin: 0 auto;
+}
+
 .Technical_skills {
-  margin-left: 4%;
-  margin-right: 6%;
-  font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 0px 14px 0px 14px;
 }
 
 .Education {
@@ -97,6 +105,7 @@ ul {
 
 .Personal_info {
     margin-left: 4%;
+    margin-right: 4%;
     font-family: serif;
 
 }
@@ -109,12 +118,17 @@ td {
   padding: 5px;
 }
 
+table#edu {
+    margin: -1%;
+    text-align: justify;
+}
 .rightcontainer {
-    display: block;
-  width: 750px;
-  height: 895px;
-  background-color: #FFFFFF;
-  margin-left: 26%;
-  position: absolute;
-  border: 2px ridge #DFDEDD;
+  display: block;
+    width: 605px;
+    height: 885px;
+    background-color: #FFFFFF;
+    margin-left: 26%;
+    position: absolute;
+    border: 2px ridge #DFDEDD;
+    padding: 5px;
 }
