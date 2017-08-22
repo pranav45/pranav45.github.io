@@ -1,134 +1,138 @@
 .container {
-    width: 1092px;
-    height: 902px;
-
-    margin: 0 auto;
+width: 100%;
+height: auto;
+margin: 0 auto;
 }
 
 .leftcontainer{
-  display: block;
-  background-color: #D1DDD1;
-  position: absolute;
-  width: 332px;
-  height: 895px;
-  border: 2px ridge #DFDEDD;
-  margin: 0 auto;
+display: inline-block;
+background-color: #D1DDD1;
+width: 35%;
+height: auto;
+border: 2px ridge #DFDEDD;
+margin: 0 auto;
+float: left;
+padding: 5px 5px 12px 5px;
 }
 
-
 p{
-    text-align: justify;
+text-align: justify;
 }
 
 .contentpanel {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
+display: block;
+margin: 0 auto;
+width: 80%;
+height: auto;
 }
+
 .circle {
-  padding: 10px;
-  border-radius: 50%;
-  background: #000;
-  display: table-cell;
-  width: 1%;
-  height: 1%;
-  background-size: 54%;
+border-radius: 50%;
+width: 10px;
+height: 10px;
+font-size: 50px;
+line-height: 0;
+padding: 3px;
+}
+
+td.languages {
+margin: 0 auto;
+padding: 5px 44px 5px 0px;
 }
 
 img.profilepic {
-    width: 163px;
-    height: 179px;
-    margin-left: 21%;
-    margin-top: 4%;
-    border-radius: 50%;
+width: 163px;
+height: 179px;
+margin: 0 auto;
+border-radius: 50%;
+display: block;
 }
 
 p.refdetail {
-    text-align: justify;
-
+text-align: justify;
 }
 
 .Interests {
-  margin-left: 2%;
-  margin-right: 8%;
+margin-left: 2%;
+margin-right: 8%;
 font-family: 'Titillium Web', sans-serif;
 font-size: 15px;
 }
 
 label#expdetails {
-    font-size: larger;
+font-size: larger;
 }
 
 .Other_details {
-  margin-left: 2%;
+margin-left: 2%;
 font-family: 'Source Sans Pro', sans-serif;
 }
 
 .profile {
-      margin-left: 4%;
-      margin-right: 4%;
-      font-family: serif;
-      font-size: 15px;
-      text-align: justify;
+margin-left: 4%;
+margin-right: 4%;
+font-family: serif;
+font-size: 15px;
+text-align: justify;
 }
 
 body {
-    background-color: #6b6767;
+background-color: #6b6767;
 }
 
 h1 {
-    margin: 0 auto;
-    padding: 0px 0px 2px 3px;
-    font-family: 'Montserrat', sans-serif;
+margin: 0 auto;
+padding: 0px 0px 2px 3px;
+font-family: 'Montserrat', sans-serif;
 }
 
 ul {
-    padding: 0px 0px 0px 20px;
+padding: 0px 0px 0px 20px;
 }
 
 label#pinfo {
-    padding: 0px 1px 2px 5px;
-    margin: 0 auto;
+padding: 0px 1px 2px 5px;
+margin: 0 auto;
 }
 
 .Technical_skills {
-    font-family: 'Raleway', sans-serif;
-    text-align: justify;
-    margin: 0 auto;
-    padding: 0px 14px 0px 14px;
+font-family: 'Raleway', sans-serif;
+text-align: justify;
+margin: 4%;
 }
 
 .Education {
-  margin-left: 2%;
-      font-family: 'Maven Pro', sans-serif;
+margin-left: 2%;
+font-family: 'Maven Pro', sans-serif;
 }
 
+label#Academic {
+padding: 0px 1px 2px 5px;
+display: block;
+}
 .Personal_info {
-    margin-left: 4%;
-    margin-right: 4%;
-    font-family: serif;
-
+margin: 4%;
+font-family: serif;
 }
 
 .References {
-    margin-left: 2%;
+margin-left: 2%;
 }
 
 td {
-  padding: 5px;
+padding: 5px;
 }
 
-table#edu {
-    margin: -1%;
-    text-align: justify;
+span.year {
+float: right;
+margin: 0 auto;
 }
+
 .rightcontainer {
-  display: block;
-    width: 605px;
-    height: 885px;
-    background-color: #FFFFFF;
-    margin-left: 26%;
-    position: absolute;
-    border: 2px ridge #DFDEDD;
-    padding: 5px;
+display: inline-block;
+width: 56%;
+height: auto;
+background-color: #FFFFFF;
+border: 2px ridge #DFDEDD;
+padding: 5px 17px 5px 5px;
 }
