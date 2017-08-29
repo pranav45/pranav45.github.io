@@ -2,10 +2,71 @@
   <head>
     <link rel="Stylesheet" type="text/css" href="resume.css">
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Montserrat|Open+Sans|Open+Sans+Condensed:300|Quicksand|Raleway|Source+Sans+Pro|Titillium+Web" rel="stylesheet">
+    <link href="nanogallery.css" rel="stylesheet" type="text/css">
+  	<link href="nanogallery_clean.css" rel="stylesheet" type="text/css">
+  	<link href="nanogallery_light.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="jquery.js"></script>
+  	<script type="text/javascript" src="jquery.nanogallery.js"></script>
+    <script>
+  		$(document).ready(function () {
+        DisplayGallery();
+        //console.dir($('head meta[name=viewport]')[0].content);
+        function cloneObject(obj) {
+          if (obj === null || typeof obj !== 'object') {
+            return obj;
+          }
+          var temp = obj.constructor(); // give temp the original obj's constructor
+          for (var key in obj) {
+              temp[key] = cloneObject(obj[key]);
+          }
+          return temp;
+        }
+
+        function DisplayGallery() {
+          var nb = $('#nbThumbs').val();
+          var contentGallery = [];
+          var sources=[
+            { src: 'images/p1.jpg', srct: 'images/p1.jpg', title: 'image 01', imgtWidth:320, imgtHeight:213, albumID:0, customData:{v1:1, v2:2} },
+            { src: 'images/p2.jpg', srct: 'images/p2.jpg', title: 'image 02', imgtWidth:320, imgtHeight:213, albumID:0 },
+            { src: 'images/p3.jpg', srct: 'images/p3.jpg', title: 'image 03', imgtWidth:320, imgtHeight:213, albumID:0 },
+            { src: 'images/p4.jpg', srct: 'images/p4.jpg', title: 'image 01', imgtWidth:160, imgtHeight:160, albumID:0 },
+            { src: 'images/p5.jpg', srct: 'images/p5.jpg', title: 'image 02', imgtWidth:160, imgtHeight:160, albumID:0 },
+            { src: 'images/p7.jpg', srct: 'images/p7.jpg', title: 'image 03', imgtWidth:160, imgtHeight:160, albumID:0 }
+          ];
+
+          for( var i=0; i<6; i++ ) {
+            contentGallery.push(cloneObject(sources[Math.floor(Math.random()*6)]));
+            contentGallery[i].ID=i+1;
+          }
+
+          jQuery("#nanoGallery").nanoGallery({ thumbnailWidth:'auto', thumbnailHeight:120,
+            items:contentGallery,
+            //paginationMaxItemsPerPage:3,
+            //paginationMaxLinesPerPage:1,
+            thumbnailHoverEffect:'imageInvisible,imageScale150,borderLighter',
+            //thumbnailHoverEffect:'labelAppear75',
+            //thumbnailHoverEffect:'imageScale150',
+            viewerDisplayLogo:true,
+            locationHash:false,
+            thumbnailDisplayInterval: 5,
+            //imageTransition: 'fade',
+            thumbnailDisplayTransition: true,
+            thumbnailLabel : { position : 'overImageOnBottom', display : true, displayDescription : true, titleMaxLength : 0, descriptionMaxLength : 0, hideIcons : false, title : '', itemsCount : '' },
+            //breadcrumbAutoHideTopLevel:true,
+            //maxItemsPerLine:5,
+            //itemsSelectable:true,
+            //showCheckboxes: true,
+            galleryRenderStep: 50,
+            //debugMode: true,
+            paginationDots : true,
+            galleryFullpageButton:true
+          });
+          }
+  		});
+  	</script>
   </head>
   <title> Resume</title>
   <body>
-    <div class="container">
       <div class="contentpanel">
         <div class="leftcontainer">
           <img src="images/pranav.jpg" class="profilepic"></img>
@@ -91,7 +152,10 @@
               </tbody>
             </table>
           </div>
+          <div id="nanoGallery">
+          </div>
         </div>
+
         <div class="rightcontainer">
           <div class="Other_details">
             <h2>Experience</h2>
@@ -112,16 +176,6 @@
             <h2>Education</h2>
             <label id="Academic"> BSC in Computer Science,GWC College Panval-Banda <span class="year">2010-2013 </span></label>
             <label id="Academic"> MCA ,Finolex College Ratnagiri,India <span class="year"> 2013-2016</span></label>
-
-            <!-- <div id="edu">
-              <div class="edu1">
-                <div class="ed1">BSC in Computer Science,GWC College Panval-Banda</div>
-                <div class="ed2">2010-2013</div>
-              </div>
-              <div class="edu2">
-                <div class="ed1">MCA ,Finolex College Ratnagiri,India <span class="year"> 2013-2016 </span></div>
-              </div>
-            </div> -->
           </div>
           <div class="Interests">
             <h2>Interests</h2>
@@ -141,9 +195,9 @@
               <label>Timothy Myers, Atlantic Co.<br>Product Manager<br>
                 +44 1431 356321 | timothy@atlantic.co.uk</label>
             </p>
+
           </div>
         </div>
       </div>
-    </div>
   </body>
 </html>

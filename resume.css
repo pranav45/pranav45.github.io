@@ -12,7 +12,7 @@ height: auto;
 border: 2px ridge #DFDEDD;
 margin: 0 auto;
 float: left;
-padding: 5px 5px 12px 5px;
+padding: 35px 0;
 }
 
 p{
@@ -24,6 +24,9 @@ display: block;
 margin: 0 auto;
 width: 80%;
 height: auto;
+border: 1px solid;
+overflow: auto;
+background-color: white;
 }
 
 .circle {
@@ -130,9 +133,8 @@ margin: 0 auto;
 
 .rightcontainer {
 display: inline-block;
-width: 56%;
+width: 64%;
 height: auto;
 background-color: #FFFFFF;
-border: 2px ridge #DFDEDD;
-padding: 5px 17px 5px 5px;
+padding: 35px 0;
 }
